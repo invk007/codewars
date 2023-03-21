@@ -1,0 +1,11 @@
+1. Clarify the question.
+   Be sure you correctly understood a task.
+2. Confirm Inputs
+3. Test Cases
+   Consider corner cases
+4. Brainstorming
+   Define solution
+5. Runtime analysis
+   Estimate big-O
+6. Coding
+7. Debugging
