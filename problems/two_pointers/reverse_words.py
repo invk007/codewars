@@ -18,9 +18,9 @@ def reverse_words(s: str) -> str:
 
 def reverse_words_py(s: str) -> str:
     """Pythonic solution for the task"""
-    return " ".join([word[::-1] for word in s.split()])
+    return ' '.join([word[::-1] for word in s.split()])
 
 
 if __name__ == '__main__':
     assert reverse_words('Hello World') == 'olleH dlroW'
-    assert reverse_words_py("Hello World") == 'olleH dlroW'
+    assert reverse_words_py('Hello World') == 'olleH dlroW'
