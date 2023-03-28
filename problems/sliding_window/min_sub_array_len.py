@@ -12,7 +12,10 @@ def min_subarray_len(nums: list[int], target: int) -> int:
         sum_ += nums[j]
         while sum_ >= target:
             length = j - i + 1
-            ans = length if ans is None else min(ans, length)
+            if ans is None:
+                ans = length
+            else:
+                ans = min(ans, length)
             sum_ -= nums[i]
             i += 1
 
