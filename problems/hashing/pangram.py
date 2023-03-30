@@ -11,6 +11,6 @@ def check_pangram(sentence: str) -> bool:
     return False
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     assert check_pangram('thequickbrownfoxjumpsoverthelazydog')
     assert not check_pangram('leetcode')
