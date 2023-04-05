@@ -10,7 +10,7 @@ def longest_ones(nums: list[int], k: int) -> int:
                 curr -= 1
             i += 1
 
-        ans = max(ans, len(nums[i:j + 1]))
+        ans = max(ans, len(nums[i : j + 1]))
 
     return ans
 
