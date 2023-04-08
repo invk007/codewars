@@ -7,7 +7,7 @@ from itertools import zip_longest
 
 def max_num_of_balloons(text: str) -> int:
     string = 'balloon'
-    hashmap = dict(zip_longest(string, '', fillvalue=0))
+    hashmap = dict(zip_longest(string, [0], fillvalue=0))
 
     for ch in text:
         if ch in string:

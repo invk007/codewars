@@ -13,6 +13,7 @@ def find_missing_number_additional_space(nums: list[int]) -> int:
     for i in range(len(nums) + 1):
         if i not in present_nums:
             return i
+    return -1
 
 
 if __name__ == '__main__':
