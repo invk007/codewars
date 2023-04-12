@@ -1,3 +1,6 @@
+"""Find the longest sequence of 1 if k zeroes can be swapped to 1."""
+
+
 def longest_ones(nums: list[int], k: int) -> int:
     ans = curr = i = 0
 
