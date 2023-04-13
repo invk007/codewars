@@ -19,6 +19,3 @@ def len_of_longest_substr(s: str) -> int:
         ans = max(ans, i - j + 1)
 
     return ans
-
-
-
