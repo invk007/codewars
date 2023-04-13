@@ -1,4 +1,5 @@
 import pytest
+
 from problems.hashing.longest_substr import len_of_longest_substr
 
 
