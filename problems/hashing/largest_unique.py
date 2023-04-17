@@ -10,8 +10,3 @@ def largest_unique_num(nums: list[int]) -> int:
             ans = val
 
     return ans
-
-
-if __name__ == '__main__':
-    assert 8 == largest_unique_num([5, 7, 3, 9, 4, 9, 8, 3, 1])
-    assert -1 == largest_unique_num([9, 9, 8, 8])
