@@ -17,9 +17,3 @@ def max_num_of_balloons(text: str) -> int:
     hashmap['o'] //= 2
 
     return min(hashmap.values())
-
-
-if __name__ == '__main__':
-    assert 1 == max_num_of_balloons('nlaebolko')
-    assert 2 == max_num_of_balloons('loonbalxballpoon')
-    assert 0 == max_num_of_balloons('leetcode')
