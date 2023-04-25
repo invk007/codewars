@@ -13,26 +13,13 @@ Return the simplified canonical path.
 
 
 def simplify_path(path: str) -> str:
-    i = j = 0
     stack = []
-    
-    while j < len(path):
 
-        while path[j] != "/":
-            j += 1
-            if j == len(path):
-                break
-
-        substr = path[i:j]
-
-        if substr == "..":
+    for el in path.split("/"):
+        if el == "..":
             if stack:
                 stack.pop()
-        elif substr != "" and substr != ".":
-            stack.append(substr)
-
-        i = j + 1
-        j += 1
+        elif el != "" and el != ".":
+            stack.append(el)
 
     return "/" + "/".join(stack)
-
