@@ -15,11 +15,11 @@ Return the simplified canonical path.
 def simplify_path(path: str) -> str:
     stack = []
 
-    for el in path.split("/"):
-        if el == "..":
+    for el in path.split('/'):
+        if el == '..':
             if stack:
                 stack.pop()
-        elif el != "" and el != ".":
+        elif el != '' and el != '.':
             stack.append(el)
 
-    return "/" + "/".join(stack)
+    return '/' + '/'.join(stack)
