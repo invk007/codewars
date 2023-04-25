@@ -1,6 +1,6 @@
 import pytest
 
-from problems.katas.strip_comments import strip_comments
+from problems.stacks.strip_comments import strip_comments
 
 
 @pytest.mark.parametrize(

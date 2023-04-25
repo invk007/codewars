@@ -14,7 +14,3 @@ def highest_altitude(gain: list[int]) -> int:
         if prefix[-1] > max_:
             max_ = prefix[-1]
     return max_
-
-
-assert 0 == highest_altitude([-4, -3, -2, -1, 4, 3, 2])
-assert 1 == highest_altitude([-5, 1, 5, 0, -7])
