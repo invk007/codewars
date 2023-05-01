@@ -23,9 +23,3 @@ def pivot_index(nums: list[int]) -> int:
         left += nums[i]
 
     return ans
-
-
-print(3 == pivot_index([1, 7, 3, 6, 5, 6]))
-print(-1 == pivot_index([1, 2, 3]))
-print(0 == pivot_index([2, 1, -1]))
-print(-1 == pivot_index([-1, -1, -1, 1, 1, -1]))
