@@ -7,5 +7,18 @@ from problems.trees.tree_node import TreeNode
 
 
 def has_path_sum(root: Optional[TreeNode], target_sum: int) -> bool:
-    if root is None:
-        return False
+    def dfs(node: TreeNode, curr: int) -> bool:
+        if not node:
+            return False
+
+        if not node.left and not node.right:
+            return (node.val + curr) == target_sum
+
+        curr += node.val
+
+        left = dfs(node.left, curr)
+        right = dfs(node.right, curr)
+
+        return left or right
+
+    return dfs(root, 0)
