@@ -1,4 +1,5 @@
 import pytest
+
 from problems.prefix_sum.pivot_index import pivot_index
 
 

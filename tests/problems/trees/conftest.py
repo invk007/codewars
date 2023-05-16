@@ -1,8 +1,9 @@
 import pytest
+
 from problems.trees.tree_node import TreeNode
 
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def tree() -> TreeNode:
     root = TreeNode(val=0)
     node1 = TreeNode(val=1)

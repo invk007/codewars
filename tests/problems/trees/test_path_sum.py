@@ -1,6 +1,5 @@
 import pytest
 
-from tests.problems.trees.tree import tree
 from problems.trees.path_sum import has_path_sum
 
 

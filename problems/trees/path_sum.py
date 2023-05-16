@@ -3,6 +3,7 @@ there is a path from the root to a leaf such that the sum of the nodes on the
 path is equal to targetSum, and return false otherwise."""
 
 from typing import Optional
+
 from problems.trees.tree_node import TreeNode
 
 

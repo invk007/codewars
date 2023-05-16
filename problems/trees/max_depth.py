@@ -2,6 +2,7 @@
 root to a leaf."""
 
 from typing import Optional
+
 from problems.trees.tree_node import TreeNode
 
 
