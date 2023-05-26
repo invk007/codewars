@@ -21,5 +21,3 @@ def min_depth(root: Optional[TreeNode]) -> int:
         return left_depth + 1
 
     return min(left_depth, right_depth) + 1
-
-
