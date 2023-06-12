@@ -5,7 +5,7 @@ from problems.trees.tree_node import TreeNode
 
 @pytest.fixture(scope='session')
 def tree() -> TreeNode:
-    root = TreeNode(val=0)
+    root = TreeNode(val=1)
     node1 = TreeNode(val=1)
     node2 = TreeNode(val=2)
     node3 = TreeNode(val=3)
