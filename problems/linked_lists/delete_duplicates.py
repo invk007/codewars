@@ -1,16 +1,20 @@
-"""Given the head of a sorted linked list, delete all duplicates such that each
-element appears only once. Return the linked list sorted as well."""
-
-from problems.linked_lists.list_node import ListNode
+from problems.linked_lists.list import ListNode, from_array_to_list
 
 
-def delete_duplicates(head: ListNode) -> ListNode:
-    pointer = head
+def solution(head: ListNode[int]) -> ListNode[int]:
+    current = head
 
-    while pointer and pointer.next:
-        if pointer.val == pointer.next.val:
-            pointer.next = pointer.next.next
-        else:
-            pointer = pointer.next
+    while current and current.next:
+        while current.next and current.val == current.next.val:
+            current.next = current.next.next
+        current = current.next
 
     return head
+
+if __name__ == '__main__':
+    arr = [1, 2, 3, 4]
+    result = solution(from_array_to_list(arr))
+
+    while result:
+        print(result.val)
+        result = result.next
