@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from http.cookiejar import cut_port_re
 from typing import Optional, TypeVar
 
 
@@ -31,6 +32,16 @@ def from_array_to_list(arr: list[T]) -> ListNode[T]:
         prev = new_node
 
     return head
+
+def from_list_to_array(head: ListNode[T] | None) -> list[T]:
+    result = []
+    if head is None:
+        return result
+    curr = head
+    while curr:
+        result.append(curr.val)
+        curr = curr.next
+    return result
 
 
 if __name__ == '__main__':
